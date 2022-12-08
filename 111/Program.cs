@@ -4,11 +4,15 @@
 // 2, 4 -> 16
 Console.WriteLine("Введите число А");
 int A =Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введитечисло В,степень");
+Console.WriteLine("Введите число В,степень");
 int B =Convert.ToInt32(Console.ReadLine());
-int S=1;
+int Stpn(int A,int B)
+{
+  int S=1;
 for (int i=1;i<=B;i++)
 {
 S=S*A;
+}  
+return S;
 }
-Console.WriteLine($"Число {A} в степени {B} равно {S}");
+Console.WriteLine($"Число {A} в степени {B} равно {Stpn(A,B)}");

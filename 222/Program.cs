@@ -3,12 +3,16 @@
 // 452 -> 11
 // 82 -> 10
 // 9012 -> 12
-Console.WriteLine("Введите число n = ");
+Console.WriteLine("Введите число ");
 int n = Convert.ToInt32(Console.ReadLine());
-int sum = 0;
+int SumN (int n)
+{
+   int sum = 0;
 while (n > 0)
 {
     sum = sum + n%10;
     n = n/10;
+} 
+return sum;
 }
-Console.WriteLine($"Сумма цифр числа равна {sum}");
+Console.WriteLine($"Сумма цифр числа равна {SumN(n)}");

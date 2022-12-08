@@ -14,9 +14,3 @@ Console.Write("Введите число : ");
   Console.ReadKey();
   return 0;
  
-// n = int(input("Введите число:"))
-// count = 0
-// while(n > 0):
-//     count = count + 1
-//     n = n // 10
-// print("Количество цифр равно:", count)
